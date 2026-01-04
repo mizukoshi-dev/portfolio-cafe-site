@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Helvetica Neue,Arial,Hiragino Sans,Hiragino Kaku Gothic ProN,Meiryo,sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu,.text-box,.map{
+    width: 1000px;
+}
+
+.menu,.about,.access,.contact{
+    padding: 0 16px;
+}
+
+.parallax{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 20px 0;
+}
+
+.bg1{
+    background-image: url("../images/menu.jpg");
+}
+
+.bg2{
+    background-image: url("../images/about.jpg");
+}
+
+.bg3{
+    background-image: url("../images/access.jpg");
+}
+
+.bg4{
+    background-image: url("../images/contact.jpg");
+}
+
+.overlay-text{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.mainvisual {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.base {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.nav{
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 20px;
+    text-shadow: black 1px 1px;
+    font-weight: bold;
+}
+
+.nav :hover{
+    color: #e03131;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+header{
+    position: relative;
+    display: inline-block;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-title{
+    padding: 30px;
+    text-decoration: underline 3px #b00;
+    text-underline-offset: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.menu-list li{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+
+.price{
+    padding-left: 20px;
+}
+
+.item{
+    border-bottom: black 1px dotted;
+    padding: 0 100px 0 0;
+}
+
+.menu-block{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.coffee{
+    border-right: solid black 1px;
+    width: 50%;
+}
+
+.coffee,.food,.other{
+    padding: 0 25px;
+}
+
+.food-other{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#about{
+    align-items: center;
+    text-align: center;
+}
+
+.women{
+    grid-area: 1 / 1;
+    max-width: 250px;
+    height: auto;
+    justify-self: start;
+    align-self: start; 
+    z-index: 1;
+}
+
+.coffee-img{
+    grid-area: 1 / 1;
+    max-width: 250px;
+    height: auto;
+    align-self: end;
+    justify-self: end;
+    z-index: 0;
+}
+
+.img-block{
+    width: 400px;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.text-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.text{
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.red-box{
+    display: flex;
+    justify-content: center;
+}
+
+.read-more{
+    display: flex;
+    background-color: #e03131;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: #e03131 2px solid;
+    transition: color 0.7s, background-color 0.7s, letter-spacing 0.7s;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background-color: #ffffff;
+    color: #e03131;
+    letter-spacing: 2px;
+}
+
+#access{
+    text-align: center;
+}
+
+.address{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.map{
+    filter: grayscale(100%);
+    width: 1000px;
+}
+
+.address-text{
+    text-align: left;
+    margin: 5px 0;
+}
+
+#contact{
+    text-align: center;
+}
+
+.contact{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.name,.mail,.times,.area,.category,.content{
+    margin-top: 20px;
+}
+
+form input,form textarea,form select {
+    display: block;
+    margin: 5px auto; 
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.options input[type="radio"],
+.options input[type="checkbox"] {
+    width: auto;
+    margin: 0 0 0 10px;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form input[type="submit"] {
+    background-color: #e03131;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid black 1px;
+    cursor: pointer;
+    width: 50%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #e03131;
+    border: 1px solid black;
+    transition: 0.7s;
+}
+
+form input[type="submit"]:active{
+    background-color: #e03131;
+    color: #fff;
+    transition: 0s;
+}
+
+input[type="text"],input[type="email"],textarea {
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 1050px){
+    .mainvisual{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .parallax{
+        background-attachment: scroll;
+    }
+
+    .base{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content:center;
+        width: 340px;
+    }
+
+    .menu-block{
+        width: 100%;
+        justify-content:center;
+    }
+
+    .coffee{
+        border-right: none;
+        width: 100%;
+    }
+
+    .food,.food-other{
+        width: 100%;
+    }
+
+    .img-block{
+        width: 100%;
+    }
+
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+    }
+
+    .access,.contact,.address{
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .map{
+        max-width: 340px;
+        width: 100%;
+    }
+
+    form input,form textarea,form select {
+    max-width: 340px;
+    }
+}
